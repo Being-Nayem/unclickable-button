@@ -1,0 +1,34 @@
+body{
+    background-color: blue;
+}
+h1{
+    color: aliceblue;
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px;
+    height: 200px;
+  }
+#No{
+    color: black;
+    width: 150px;
+    height: 50px;
+    padding: 5px;
+    background-color: aquamarine;
+    position: absolute;
+    left: 550px;
+    top: 300px;
+}
+#Yes{
+    color: black;
+    width: 150px;
+    height: 50px;
+    padding: 5px;
+    background-color: aquamarine;
+    position: absolute;
+    left: 700px;
+    top: 300px;
+    
+}
