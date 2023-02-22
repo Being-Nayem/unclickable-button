@@ -1,34 +1,167 @@
 body{
-    background-color: blue;
+    background: url(./emoji.jpg);
+    background-repeat: no-repeat;
+    background-size: auto;
 }
-h1{
-    color: aliceblue;
+
+.container {
+    margin: 0 auto;
+    text-align: center;
 }
-.center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 150px;
-    height: 200px;
-  }
-#No{
-    color: black;
-    width: 150px;
-    height: 50px;
-    padding: 5px;
-    background-color: aquamarine;
+
+.title{
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+}
+
+.title-gif {
+    height: auto;
+}
+
+.gif-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+button {
+    font-size: 20px;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+.btn-1{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+}
+
+.btn-2{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+#No {
     position: absolute;
-    left: 550px;
-    top: 300px;
 }
-#Yes{
+#Yes:hover{
     color: black;
-    width: 150px;
-    height: 50px;
-    padding: 5px;
-    background-color: aquamarine;
-    position: absolute;
-    left: 700px;
-    top: 300px;
-    
+    background-color: pink;
+}
+
+.copyright{
+    display: flex;
+    margin: auto;
+    justify-content: right;
+    margin-top: 100px;
+}
+
+/* Styles for small screens (up to 600px) */
+
+@media only screen and (max-width: 600px) {
+    button {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+
+    #No {
+        margin-left: 5px;
+    }
+
+    /* Additional styles for small screens */
+    .title {
+        font-size: 24px;
+    }
+
+    .gif-container {
+        margin-top: 20px;
+    }
+
+    .copy-right {
+        margin-top: 50px;
+        font-size: 12px;
+    }
+}
+
+
+/* Styles for small screens (up to 600px) */
+
+@media only screen and (max-width: 600px) {
+    button {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+
+    .button-container {
+        padding: 10px 0;
+        bottom: 0px;
+    }
+
+    #No {
+        margin-left: 5px;
+    }
+
+    /* Additional styles for small screens */
+    .title {
+        font-size: 24px;
+    }
+
+    .gif-container {
+        margin-top: 20px;
+    }
+
+    .copy-right {
+        margin-top: 50px;
+        font-size: 12px;
+    }
+}
+
+/* Styles for medium screens (up to 1024px) */
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    button {
+        font-size: 18px;
+        padding: 12px 25px;
+    }
+
+    .title {
+        font-size: 36px;
+    }
+
+    .gif-container {
+        margin-top: 40px;
+    }
+
+    .copy-right {
+        margin-top: 80px;
+        font-size: 14px;
+    }
+}
+
+/* Styles for large screens (above 1024px) */
+
+@media only screen and (min-width: 1025px) {
+    button {
+        font-size: 24px;
+        padding: 15px 30px;
+    }
+
+    .title {
+        font-size: 48px;
+    }
+
+    .gif-container {
+        margin-top: 60px;
+    }
+
+    .copy-right {
+        margin-top: 120px;
+        font-size: 16px;
+    }
 }
